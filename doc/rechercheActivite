@@ -1,5 +1,0 @@
-
-Recheche Activité 
-
-la recherche est faite à l'aide d'un mot clé, representé ici par nomActivite, et eventuellement l'heure de début d'activité demandé (hDeb), afin de pouvoir retourner la liste des lieux ouverts. les resultats seront affichés selon la destance c'est-à-dire de plus proche au moins proche de la derniere activité avant me hDeb demandée.
-si aucune activité correspondante à la recherche est trouvée, un message s'affichera et invitera l'utilisateur à changer sa recherche.
