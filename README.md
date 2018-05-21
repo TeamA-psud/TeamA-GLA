@@ -1,6 +1,5 @@
 #  Assistant événementiel de sorties
-
-![Accueil application](/images du site/Capture du 2018-05-22 00:56:40.png)
+(/images du site/Capture du 2018-05-22 00:56:40.png)
 
 L'objectif principal de cette application est de permettre **la création et l'organisation de sortie entre amis** de manière simple et automatique, tout en prenant en compte les contraintes liées aux adresses et aux préférences alimentaires des différents participants.  
 
