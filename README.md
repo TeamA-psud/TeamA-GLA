@@ -1,5 +1,5 @@
-#  Assistant événementiel de sorties
-<h1>hhh</h1>
+#  Guide d'utilisation 
+
  <img src="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/Capture%20du%202018-05-22%2000:56:40.png"</img>
 
 L'objectif principal de cette application est de permettre **la création et l'organisation de sortie entre amis** de manière simple et automatique, tout en prenant en compte les contraintes liées aux adresses et aux préférences alimentaires des différents participants.  
