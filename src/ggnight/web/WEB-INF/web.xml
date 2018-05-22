@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ggnight</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UserControl</display-name>
+    <servlet-name>UserControl</servlet-name>
+    <servlet-class>Controls.UserControl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserControl</servlet-name>
+    <url-pattern>/UserControl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FriendControl</display-name>
+    <servlet-name>FriendControl</servlet-name>
+    <servlet-class>Controls.FriendControl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FriendControl</servlet-name>
+    <url-pattern>/FriendControl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EventControl</display-name>
+    <servlet-name>EventControl</servlet-name>
+    <servlet-class>Controls.EventControl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EventControl</servlet-name>
+    <url-pattern>/EventControl</url-pattern>
+  </servlet-mapping>
+</web-app>

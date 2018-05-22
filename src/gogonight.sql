@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1
--- Généré le :  mar. 17 avr. 2018 à 18:05
--- Version du serveur :  10.1.26-MariaDB
--- Version de PHP :  7.1.9
+-- Hôte : localhost
+-- Généré le :  mar. 22 mai 2018 à 23:25
+-- Version du serveur :  10.1.31-MariaDB
+-- Version de PHP :  7.2.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -38,7 +38,7 @@ CREATE TABLE `alimentation` (
 --
 
 INSERT INTO `alimentation` (`idAlimentation`, `TypeAlimentation`) VALUES
-(1, 'Thaï'),
+(1, 'Thai'),
 (2, 'turque'),
 (3, 'libanais'),
 (4, 'hallal'),
@@ -46,9 +46,67 @@ INSERT INTO `alimentation` (`idAlimentation`, `TypeAlimentation`) VALUES
 (6, 'Vietnamien'),
 (7, 'chinois'),
 (8, 'hindous'),
-(9, 'végétarien'),
+(9, 'vegetarien'),
 (10, 'italien'),
 (11, 'Sans gluten');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `amis`
+--
+
+CREATE TABLE `amis` (
+  `idAmiAssoc` int(11) NOT NULL,
+  `idUtilisateur` int(11) NOT NULL,
+  `idAmi` int(11) NOT NULL,
+  `etatEnvoi` int(11) NOT NULL,
+  `notiVue` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `invite`
+--
+
+CREATE TABLE `invite` (
+  `idInvite` int(11) NOT NULL,
+  `idOrganisateur` int(11) NOT NULL,
+  `idAmi` int(11) NOT NULL,
+  `idSoiree` int(11) NOT NULL,
+  `etatEnvoi` int(11) NOT NULL,
+  `notiVue` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `lieu`
+--
+
+CREATE TABLE `lieu` (
+  `idLieu` int(11) NOT NULL,
+  `nom` varchar(1000) NOT NULL,
+  `adresse` varchar(1500) NOT NULL,
+  `placeId` varchar(5000) NOT NULL,
+  `rating` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `soiree`
+--
+
+CREATE TABLE `soiree` (
+  `idSoiree` int(11) NOT NULL,
+  `idOrganisateur` int(11) NOT NULL,
+  `idLieu` int(11) NOT NULL,
+  `date` varchar(1000) NOT NULL,
+  `dHeure` varchar(100) NOT NULL,
+  `fHeure` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -67,9 +125,10 @@ CREATE TABLE `useralim` (
 --
 
 INSERT INTO `useralim` (`idUserAlim`, `idUtilisateur`, `idPrefAlim`) VALUES
-(1, 2, 1),
-(2, 2, 2),
-(3, 2, 3);
+(48, 12, 2),
+(49, 12, 3),
+(50, 12, 7),
+(51, 12, 9);
 
 -- --------------------------------------------------------
 
@@ -97,7 +156,7 @@ CREATE TABLE `utilisateur` (
 --
 
 INSERT INTO `utilisateur` (`idUtilisateur`, `Nom`, `Prenom`, `Age`, `Adresse`, `DateNaiss`, `Phone`, `Email`, `Password`, `Sex`, `MoyTrans`, `Budget`) VALUES
-(2, 'Chabane', 'Hichem', 23, 'Constantine', '1994-10-16', 123456789, 'hichem@gmail.com', '12345', 'homme', 'tramway', 300);
+(12, 'toursal', 'thileli', 21, '34 rue victor basch,91300 Massy', '1997-01-05', 769409173, 'thileli@gmail.com', '781e5e245d69b566979b86e28d23f2c7', 'femme', 'train', 200);
 
 --
 -- Index pour les tables déchargées
@@ -108,6 +167,30 @@ INSERT INTO `utilisateur` (`idUtilisateur`, `Nom`, `Prenom`, `Age`, `Adresse`, `
 --
 ALTER TABLE `alimentation`
   ADD PRIMARY KEY (`idAlimentation`);
+
+--
+-- Index pour la table `amis`
+--
+ALTER TABLE `amis`
+  ADD PRIMARY KEY (`idAmiAssoc`);
+
+--
+-- Index pour la table `invite`
+--
+ALTER TABLE `invite`
+  ADD PRIMARY KEY (`idInvite`);
+
+--
+-- Index pour la table `lieu`
+--
+ALTER TABLE `lieu`
+  ADD PRIMARY KEY (`idLieu`);
+
+--
+-- Index pour la table `soiree`
+--
+ALTER TABLE `soiree`
+  ADD PRIMARY KEY (`idSoiree`);
 
 --
 -- Index pour la table `useralim`
@@ -132,16 +215,40 @@ ALTER TABLE `alimentation`
   MODIFY `idAlimentation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
+-- AUTO_INCREMENT pour la table `amis`
+--
+ALTER TABLE `amis`
+  MODIFY `idAmiAssoc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT pour la table `invite`
+--
+ALTER TABLE `invite`
+  MODIFY `idInvite` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT pour la table `lieu`
+--
+ALTER TABLE `lieu`
+  MODIFY `idLieu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT pour la table `soiree`
+--
+ALTER TABLE `soiree`
+  MODIFY `idSoiree` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT pour la table `useralim`
 --
 ALTER TABLE `useralim`
-  MODIFY `idUserAlim` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idUserAlim` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
-  MODIFY `idUtilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idUtilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
