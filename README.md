@@ -32,7 +32,7 @@ Voici la marche à suivre pour créer une première sortie :
 <img src="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/31732006_2079161875697677_8463807366909919232_n.png"></img>
 # Outils utilisés
 
-* Netbeans ,Xammp .
+* Netbeans ,Xampp .
 * Différentes API de Google (Places API Web Service, Google Map API, Distance Matrix API)
 * Genmymodel 
 * PhpmyAdmine 
