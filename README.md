@@ -21,7 +21,9 @@ L'application a été développée comme site web.
 Voici la marche à suivre pour créer une première sortie :
 
 * Creer votre compte avec vos informations 
-* Indiquez le nom et le lieu de l'événement (pas obligatoire) que vous voulez organiser
+ <img src=""></img>
+ 
+ 
 * Définissez le moyen de transport
 * Ajouter un ou plusieurs participants à la sortie (directement ou à partir de votre liste de contacts)
 * Définir l'ordre des différentes étapes de la sortie
