@@ -1,6 +1,6 @@
 #  Guide d'utilisation 
 
- <img src="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/Capture%20du%202018-05-22%2000:56:40.png"</img>
+ <img src="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/Capture%20du%202018-05-22%2000:56:40.png"></img>
 
 Le projet a pour but de réaliser un site web permettant à un ensemble d'amis d'organiser une sortie pour fêter leurs retrouvailles et passer une bonne soirée. Pour cela, le site aura pour objectif de leur trouver trois lieus qui arrangent tout le monde sachant que les amis habitent dans différentes villes d'île de France et ils veulent organiser trois sorties successives.
 
