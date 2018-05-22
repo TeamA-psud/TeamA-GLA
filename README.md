@@ -24,14 +24,20 @@ Voici la marche à suivre pour créer une première sortie :
  <img src="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/Capture%20du%202018-04-18%2000:02:29.png"></img>
 * Se connecter :
 <img src="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/Capture%20du%202018-04-18%2000:01:58.png"></img>
-* Validez puis laissez à l'application le soin de vous indiquer le meilleur endroit pour la tenue de votre soirée.
 
+* Validez puis organiser inviter vos ami/es .
+<img src ="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/Capture%20du%202018-04-18%2000:03:08.png"></img>
+
+* laissez à l'application le soin de vous indiquer le meilleur endroit pour la tenue de votre soirée
+<img src="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/31732006_2079161875697677_8463807366909919232_n.png"></img>
 # Outils utilisés
 
 * Netbeans ,Xammp .
 * Différentes API de Google (Places API Web Service, Google Map API, Distance Matrix API)
 * Genmymodel 
 * PhpmyAdmine 
+
+# Concepteurs 
 
 * **Toursal thileli**
 * **Daniela Pistol**
