@@ -20,23 +20,18 @@ L'application a été développée comme site web.
  <img src="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/Capture.png"></img>
 Voici la marche à suivre pour créer une première sortie :
 
-* Creer votre compte avec vos informations 
- <img src=""></img>
- 
- 
-* Définissez le moyen de transport
-* Ajouter un ou plusieurs participants à la sortie (directement ou à partir de votre liste de contacts)
-* Définir l'ordre des différentes étapes de la sortie
-* Ajoutez des contraintes spécifiques pour coller aux goûts de tous
+* Creer votre compte avec vos informations :
+ <img src="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/Capture%20du%202018-04-18%2000:02:29.png"></img>
+* Se connecter :
+<img src="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/Capture%20du%202018-04-18%2000:01:58.png"></img>
 * Validez puis laissez à l'application le soin de vous indiquer le meilleur endroit pour la tenue de votre soirée.
 
 # Outils utilisés
 
-* [Android Studio](https://developer.android.com/studio/index.html) : IDE pour développement pour android
+* Netbeans ,Xammp .
 * Différentes API de Google (Places API Web Service, Google Map API, Distance Matrix API)
-* [Icons8](https://icons8.com/) : Site utilisé pour trouver une grande partie des icones de l'application
-
-# Auteurs
+* Genmymodel 
+* PhpmyAdmine 
 
 * **Toursal thileli**
 * **Daniela Pistol**
