@@ -13,7 +13,7 @@ L'application a été développée comme site web.
 
 
 ## Compilation du code
-* La compilation du code se fait obligatoirement ua lencement de l'application via Netbeans et lancement du Xampp qu'il faudra installer sur votre système  en tout premier lieu (Linux, Mac ou Windows).
+* La compilation du code se fait obligatoirement au lencement de l'application via Netbeans et lancement du Xampp qu'il faudra installer sur votre système  en tout premier lieu (Linux, Mac ou Windows).
 *  Vous pouvez maintenant créer  votre rpeofil et commencer a organiser la soirée .
 
 # Utilisation de l'application
