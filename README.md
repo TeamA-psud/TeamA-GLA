@@ -17,10 +17,10 @@ L'application a été développée comme site web.
 *  Vous pouvez maintenant créer  votre rpeofil et commencer a organiser la soirée .
 
 # Utilisation de l'application
-
+ <img src="https://github.com/danielapistol/TeamA-GLA/blob/master/images%20du%20site/Capture.png"></img>
 Voici la marche à suivre pour créer une première sortie :
 
-* Cliquez sur le bouton créer une sortie
+* Creer votre compte avec vos informations 
 * Indiquez le nom et le lieu de l'événement (pas obligatoire) que vous voulez organiser
 * Définissez le moyen de transport
 * Ajouter un ou plusieurs participants à la sortie (directement ou à partir de votre liste de contacts)
